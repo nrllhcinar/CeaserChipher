@@ -1,4 +1,4 @@
-package sezarﬁifreleyici;
+package sezar√ûifreleyici;
 
 public class CeaserChipher {
 	
@@ -10,10 +10,7 @@ public class CeaserChipher {
 	  
 	    String encyrptedMessage = encyrptMessage(message, encyrptMode);
 	    System.out.print("Mesaj: " + message +"\n");
-	    System.out.print("ﬁifreli Mesaj: " + encyrptedMessage);  
-	    
-	    
-	    
+	    System.out.print("√ûifreli Mesaj: " + encyrptedMessage); 
 	 }
 	 
 	 private static String encyrptMessage(String message, int mode){
@@ -23,15 +20,6 @@ public class CeaserChipher {
 		      encyrptedMessage += letterChipher(message.charAt(i), mode);
 		 
 		return encyrptedMessage;
-	 }
-	 
-	 private static String decyrptMessage(String message, int mode){
-		 String decyrptedMessage = "";
-		 
-		 for (int i = 0; i < message.length(); i++)
-		      decyrptedMessage += letterChipher(message.charAt(i), mode);
-		 
-		return decyrptedMessage;
 	 }
 	 
 	  private static char letterChipher(char ch, int mode) {
